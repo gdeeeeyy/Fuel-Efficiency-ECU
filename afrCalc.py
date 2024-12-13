@@ -1,12 +1,8 @@
 import numpy as np
 import torch
 import torch.nn as nn
-import matplotlib.pyplot as plt
+import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import precision_recall_curve, recall_score, f1_score, mean_squared_error, r2_score
-from sklearn.linear_model import LinearRegression
-from sklearn.svm import SVR
-from sklearn.model_selection import train_test_split
 from torch.utils.data import DataLoader, Dataset
 
 # Define the LSTM Model for 4 Input Features
