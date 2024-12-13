@@ -21,11 +21,13 @@ $$\quad  \text{where} \ W \in  \mathbb{R}^{k \times m}, \ b \in  \mathbb{R}^k$$
 
 The output y_T is the predicted, normalized values of Fuel and Air Intake.
 
-Additionally the model also uses MSE as the Loss funciton and Adam's Optimizer for gradient optimiation.
+Additionally the model also uses MSE as the Loss function and Adam's Optimizer for gradient optimisation.
 
 # Desired Architecture
 
 The model is designed to predict Fuel and Air intake into the engine based on a sequential time series input of parameters such as Engine Load, RPM, Vehicle Speed, and Gear Position. This model is built on a sequential LSTM Network.
+
+![diagram-export-13-12-2024-13_55_54](https://github.com/user-attachments/assets/d2de127b-f2a6-457d-84a8-bafb90973db0)
 
 This figure depicts a 4-layer LSTM neural network designed to predict fuel and air intake in a vehicle. The model processes real-time sensor data (engine load, vehicle speed, gear position) through LSTM layers to capture temporal dependencies. The final output layer predicts fuel and air intake values. The model is trained using the MSE loss function and the Adam optimizer.
 
